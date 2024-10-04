@@ -1,0 +1,111 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Info box styling */
+.info-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin-top: 10px;
+    overflow-x: auto; /* Allow horizontal scrolling for overflow */
+}
+
+/* Info box table styling */
+.info-box table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Ensures the table adapts to available space */
+}
+
+/* Ensures long words or content doesn't break the layout */
+.info-box td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Break long words if necessary */
+    word-break: break-word;
+}
+
+.info-box tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Table container styling */
+.table-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    max-width: 800px;
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: auto; /* Ensures table adapts to container width */
+}
+
+.table-container, table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    word-wrap: break-word; /* Ensure long words break to avoid overflow */
+    word-break: break-word;
+}
+
+/* Table header styling */
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Summary container styling */
+.summary-containerALL {
+    background-color: #fff;
+    padding: 15px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; 
+    max-width: 800px;
+    width: 100%; 
+}
+
+.summary-containerALL table {
+    width: 100%;
+}
+
+.summary-containerALL td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .info-box, .table-container, .summary-containerALL {
+        padding: 10px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
