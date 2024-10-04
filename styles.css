@@ -1,0 +1,128 @@
+/* Body styling for centering */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: aliceblue; /* Light background color */
+    position: relative;
+}
+
+/* Wrapper for input section */
+#content-wrapper {
+    flex: 1; /* Allow input section to grow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* Input section styling */
+#input-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Make input section responsive */
+    max-width: 600px; /* Set a reasonable maximum width */
+    min-width: 50px; /* Set a minimum width for smaller screens */
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Footer styling */
+#footer-section {
+    width: 100%; /* Ensure footer spans full width */
+    text-align: center;
+    background-color: #f8f9fa; /* Light background for footer */
+    padding: 15px;
+    position: absolute;
+    bottom: 0; /* Stick footer to the bottom */
+    left: 0;
+}
+
+#footer-section h3 {
+    margin: 0;
+    color: #343a40; /* Darker text for footer heading */
+}
+
+#footer-section p {
+    margin: 5px 0 0;
+    color: #6c757d; /* Lighter text for the paragraph */
+    font-size: 14px;
+}
+
+/* Modern input styling */
+input {
+    padding: 12px 15px;
+    width: 100%; /* Full width for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth border & shadow transition */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Soft glow on focus */
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    width: 100%; /* Make button fill container width */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth all transitions */
+    box-sizing: border-box; /* Include padding and border in width */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+    transform: translateY(-2px);
+}
+
+/* Button link styling */
+a {
+    display: none; /* Initially hidden */
+    text-decoration: none;
+}
+
+a#nextPageBtn {
+    display: inline-block; /* Show as block */
+    margin-top: 10px; /* Space above the link */
+    padding: 10px 20px;
+    background-color: #28a745; /* Different color for the link */
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth background color and shadow transition */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a#nextPageBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+    transform: translateY(-2px);
+}
+
+/* Media query for responsive design */
+@media (max-width: 480px) {
+    #input-section {
+        width: 90%; /* Make input section nearly full width on smaller screens */
+    }
+    
+    button, a#nextPageBtn {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+}
