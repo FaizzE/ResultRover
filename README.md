@@ -3,9 +3,3 @@ ResultRover helps you navigate your academic journey. Enter your enrollment numb
 
 https://kkuniversityexamresults.netlify.app/
 
-
-Usage
-Open the application in your browser.
-Enter your enrollment number and name in the respective fields.
-Click the Submit button.
-Your personalized result page will be displayed.
