@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 /* Body styling for centering */
 body {
     display: flex;
@@ -87,7 +93,7 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Darker blue on hover */
-    color: #fff;
+    color: #dadada;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
     transform: translateY(-2px);
 }
