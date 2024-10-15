@@ -16,7 +16,7 @@ body {
     max-width: 800px;
     width: 100%;
     margin-top: 10px;
-    overflow-x: auto; /* Allow horizontal scrolling for overflow */
+    overflow-x: auto;
 }
 
 /* Info box table styling */
