@@ -1,5 +1,5 @@
 # ResultRover 📚  
-_A lightweight academic result portal built with HTML, CSS, and JavaScript_
+_A no-frills result checker built with core web technologies_
 
 ## Live Demo
 https://kkuniversityexamresults.netlify.app/
